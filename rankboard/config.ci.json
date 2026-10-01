@@ -1,0 +1,66 @@
+{
+  "brand": "organital",
+  "brandTitle": "STAYBALANCED",
+  "teamName": "Organital",
+  "marketplace": "Amazon US",
+  "days": 30,
+  "monthly": {
+    "since": "2026-06"
+  },
+  "spillDir": "../.rankboard/spill",
+  "out": "../.rankboard/build",
+  "hub": {
+    "title": "StayBalanced — organic rank",
+    "tabs": [
+      {
+        "label": "Monthly progress",
+        "sub": "Top-10 / top-50 keywords, month by month",
+        "inline": "monthly.html",
+        "note": "<b>Rank only.</b> One number per keyword per month: its median organic rank over the month's crawled days. The current month is month-to-date."
+      },
+      {
+        "label": "Daily rank",
+        "sub": "Keyword positions, last 30 days",
+        "inline": "keywords.html",
+        "note": "<b>Rank only.</b> This view carries no sales or revenue. Crossed cells are days the tracker did not run, not days the product vanished."
+      }
+    ]
+  },
+  "seal": {
+    "user": "organital",
+    "siteDir": "..",
+    "publicUrl": "https://hocmaa-lang.github.io/Organital-Rank/",
+    "gitEmail": "github-actions[bot]@users.noreply.github.com",
+    "gitName": "github-actions[bot]",
+    "publish": [
+      {
+        "src": "hub.html",
+        "as": "index.html",
+        "passEnv": "RANKBOARD_ORGANITAL_PASS",
+        "title": "STAYBALANCED — organic rank"
+      },
+      {
+        "src": "keywords.html",
+        "as": "keywords.html",
+        "passEnv": "RANKBOARD_ORGANITAL_PASS",
+        "title": "STAYBALANCED — keyword rank by day"
+      },
+      {
+        "src": "monthly.html",
+        "as": "monthly.html",
+        "passEnv": "RANKBOARD_ORGANITAL_PASS",
+        "title": "STAYBALANCED — monthly organic progress"
+      }
+    ]
+  },
+  "products": [
+    {
+      "key": "bsc",
+      "radarId": "8dfac841-48da-498c-b0b9-b8ad7a501745",
+      "asin": "B0FR553HDB",
+      "name": "Blood Sugar Complex Supplement — 60 Count",
+      "short": "Blood Sugar Complex",
+      "file": "bsc.json"
+    }
+  ]
+}
